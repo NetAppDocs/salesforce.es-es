@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: task_purging_data_&_metadata.html 
+keywords: netapp, saas backup, salesforce, sandbox, production, instance, purge, purging, purging data, metadata, retention, metadata retention, retain and purge, show purged list 
+summary: Puede purgar datos de organizaciones de Salesforce. 
+---
+= Purgado de datos y metadatos
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Puede purgar datos de organizaciones de Salesforce. La depuración de los datos a nivel de organización se gestiona en *Configuración de cuenta*.
+
+SaaS Backup para Salesforce gestiona automáticamente la retención y los purgas de metadatos. Los metadatos se conservan durante 90 días. Después de 90 días, los metadatos se purgan.
+
+
+
+== Purgado de datos
+
+Siempre tiene la opción de purgar datos de una organización específica, como una organización de Salesforce sin utilizar.
+
+Es posible purgar los datos para actualizar las instancias de producción o de filtrado.
+
+También es posible que desee agregar otra instancia de producción o de entorno de pruebas. Para ello, debe purgar una instancia de producción o de recinto de seguridad.
+
+.Pasos
+. Haga clic en image:icon_gear.gif["icono de marcha"] y, a continuación, haga clic en image:account_settings.gif["configuración de la cuenta"].
+. Haga clic en *retener y purgar*.
+. En *retener y purgar*, desplácese hacia abajo hasta *Purgar datos*.
+. Seleccione *Tipo de proveedor* y *Nombre de servicio*.
+. Busque o seleccione el ID de organización.
+. Haga clic en *Guardar*. Aparecerá un mensaje para que confirme o cancele la purga.
+. Haga clic en *Sí* para confirmar la purga. Si hace clic en *Sí*, puede recuperar los datos purgados durante un máximo de siete días.
+. Haga clic en *Mostrar lista purgada* para ver una lista de purgas programadas.
++
+image:purged_list_example.gif["ejemplo de lista purgada"]
+
+

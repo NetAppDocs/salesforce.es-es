@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: reference_new_salesforce.html 
+keywords: 'what"s new, features, new, release notes, enhancements' 
+summary: SaaS Backup para Salesforce presenta con regularidad una nueva versión para proporcionarle nuevas funciones, mejoras y correcciones de errores. 
+---
+= Nuevas funciones y actualizaciones
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Las siguientes funciones y actualizaciones nuevas se han añadido a esta versión de NetApp SaaS Backup para Salesforce.
+
+
+
+== Diciembre de 2020
+
+* SaaS Backup para Salesforce ahora restaura metadatos. Esta mejora de función incluye restauraciones a nivel de organización y restauraciones granulares de los metadatos de uno o varios elementos.
++
+Restauración de metadatos en el nivel de la organización
+
++
+image:org_level_restore_metadata_option_cropped.png["Se recorto la opción de restauración de metadatos en el nivel de la organización"]
+
++
+Restauración de metadatos de nivel granular
+
++
+image:restore_options_export-restore_metadata.png["exporte y restaure opciones de metadatos"]
+
++
+link:task_managing_restores.html["Restaurar datos"]
+
+* El *Resumen de copia de seguridad* es una mejora de funciones en SaaS Backup para Salesforce que le proporciona el número total de todos sus registros creados, actualizados y eliminados. Le permite comprobar que el número de registros de copia de seguridad coincide con el de su cuenta de Salesforce.
++
+link:task_viewing_backup_records.html["Ver registros de copia de seguridad"]
+
+
+
+
+
+== Octubre de 2020
+
+* SaaS Backup para Salesforce ahora realiza backups de metadatos. Esta mejora de función incluye backups, restauraciones a nivel de objeto y organización, y purga de los metadatos que cree. La interfaz de usuario también tiene una nueva pestaña *tipos de metadatos y componentes* donde puede ver las copias de seguridad de metadatos. Estas páginas proporcionan más información para esta nueva función:
++
+link:task_enable_disable_metadata_backups.html["Habilitación y deshabilitación de metadatos"]
+link:task_managing_restores.html["Restaurar datos"]
+
+* A partir de octubre de 2020, puede purgar sus datos. Los metadatos se purgan automáticamente después de 90 días.
++
+link:task_purging_data_&_metadata.html["Purgado de datos y metadatos"]
+
+
+
+
+
+== Febrero de 2020
+
+Ahora puede exportar datos a nivel de objeto y organización. Para cada exportación, puede descargar datos adjuntos, resultados y estadísticas de una copia de seguridad anterior.link:task_downloading_export_data.html["Descargando datos de exportación"]

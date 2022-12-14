@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: task_downloading_activity_log.html 
+keywords: netapp, saas backup, salesforce, viewing, downloading, activity, log 
+summary: Puede descargar el registro de actividades en un archivo .csv. 
+---
+= Descargando el registro de actividades
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Puede descargar el registro de actividades en un archivo .csv.
+
+.Pasos
+. En la navegación del panel izquierdo, haga clic en *Informes*.image:reporting.jpg[""]
+. Haga clic en *Registro de actividad*.
+. Haga clic en *Descargar*.image:download.jpg[""]El registro de actividades se descarga como archivo .csv.
+

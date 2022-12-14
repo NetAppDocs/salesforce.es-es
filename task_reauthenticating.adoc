@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task_reauthenticating.html 
+keywords: netapp, saas backup, reauthenticating, reauthentication, tokens, refresh, expired, access 
+summary: Puede cancelar una copia de seguridad o una restauración inmediata. No se puede cancelar una copia de seguridad programada. 
+---
+= Reautenticación
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Salesforce permite el uso de un máximo de 5 tokens antes de volver a autenticar las credenciales. Si intenta iniciar una copia de seguridad o restauración y se han utilizado todos los tokens, recibirá el siguiente mensaje de error: “Token de acceso/actualización caducada”. Si recibe este mensaje, debe volver a autenticarse antes de continuar.
+
+
+toc::[]
+.Pasos
+. En la esquina superior izquierda del panel, haga clic en image:configure_icon.jpg["Icono de ajustes"].
+. En *AJUSTES de SERVICIO*, seleccione *Salesforce*.
+. HAGA CLIC EN *CONCEDER PERMISOS DE ACCESO*.
++
+image:grant_access_permissions.jpg["Icono conceder permisos de acceso"]
+
+. Haga clic en la ficha *PRODUCCIÓN* o *RECINTO* para seleccionar la instancia que necesita volver a autenticar.
+. Haga clic en image:re_authenticate.jpg["Icono de reautenticación"].
++
+Se le redirigirá a *Salesforce* para introducir sus credenciales. Después de volver a autenticar, es posible iniciar el trabajo de backup o restauración.
+
+

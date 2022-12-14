@@ -1,0 +1,57 @@
+---
+settings:
+  name: SaaS Backup For Salesforce
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr
+sidebar:
+  entries:
+  - title: Documentos de NetApp SaaS Backup para Salesforce
+    url: "/index.html"
+  - title: Notas de la versión
+    entries:
+    - title: Novedades
+      url: "/reference_new_salesforce.html"
+    - title: Problemas y limitaciones conocidos
+      url: "/concept_kpls.html"
+  - title: Descripción general
+    url: "/concept_overview.html"
+  - title: Gestione SaaS Backup para Salesforce
+    entries:
+    - title: Política de backup
+      url: "/reference_backup_policies.html"
+    - title: Realizar una copia de seguridad inmediata
+      url: "/task_performing_immediate_backup.html"
+    - title: Habilitar y deshabilitar los backups de metadatos
+      url: "/task_enable_disable_metadata_backups.html"
+    - title: Restaurar datos
+      url: "/task_managing_restores.html"
+    - title: Comparación y restauración de diferencias de copia de seguridad
+      url: "/task_comparing_restoring.html"
+    - title: Purgado de datos y metadatos
+      url: "/task_purging_data_&_metadata.html"
+    - title: Reautenticación
+      url: "/task_reauthenticating.html"
+    - title: Cancelar un trabajo
+      url: "/task_canceling_job.html"
+  - title: Ver datos
+    entries:
+    - title: Visualización del historial de trabajos
+      url: "/task_viewing_job_history.html"
+    - title: Visualización del registro de actividades
+      url: "/task_viewing_activity_log.html"
+    - title: Descargando el registro de actividades
+      url: "/task_downloading_activity_log.html"
+    - title: Descargando datos de exportación
+      url: "/task_downloading_export_data.html"
+    - title: Ver registros de copia de seguridad
+      url: "/task_viewing_backup_records.html"
+  - title: Enviar comentarios
+    url: "/task_providing_feedback.html"
+  - title: Dónde encontrar ayuda y más información
+    url: "/concept_get_help_find_info.html"
+  - title: Avisos legales
+    url: "/reference_legal_notices.html"

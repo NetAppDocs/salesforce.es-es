@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: task_enable_disable_metadata_backups.html 
+keywords: netapp, saas backup, salesforce, enable, enabling, disable, disabling, backup, backups, metadata, metadata backups 
+summary: Es posible habilitar o deshabilitar los backups de metadatos para Salesforce. 
+---
+= Habilitar y deshabilitar los backups de metadatos
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Es posible habilitar o deshabilitar los backups de metadatos para Salesforce.
+
+
+
+== Habilitar backups de metadatos
+
+La habilitación de backups de metadatos proporciona backups de metadatos para todas las organizaciones dentro de una cuenta de inquilino.
+
+.Pasos
+. Haga clic en image:icon_gear.gif["icono de marcha"] Y seleccione *Salesforce* en *Configuración de servicios*.
++
+image:select_salesforce_settings.gif["configuración de salesforce"]
+
+. Haga clic en *Activar copia de seguridad de metadatos* para activar la función. Una vez habilitado a nivel de inquilino, se realizará un backup de los metadatos de todas las organizaciones.
+
+
+
+
+== Deshabilitar los backups de metadatos
+
+Es posible deshabilitar los backups de metadatos en el nivel de la organización. Una vez habilitados los backups de metadatos en todas las organizaciones, esto permite controlar qué organizaciones no tendrán backups de metadatos.
+
+.Pasos
+. Para desactivar las copias de seguridad de metadatos, vaya a *Servicios*.
+. Seleccione *instancias de producción* o *instancias de Sandbox*.
+. Seleccione el número de instancias *protegidas*.
+. Seleccione la organización para la cual desea deshabilitar los backups de metadatos.
+. Haga clic en *copia de seguridad de metadatos* para desactivar la función.
++
+image:disable_metadata_backup.gif["deshabilitar el backup de metadatos"]
+
+

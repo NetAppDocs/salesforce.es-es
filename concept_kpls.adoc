@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: concept_kpls.html 
+keywords: netapp, saas backup, salesforce, known, problems, limitations, release, notes 
+summary: Debe conocer ciertos problemas y limitaciones conocidos de SaaS Backup. 
+---
+= Problemas y limitaciones conocidos
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+A continuación se muestra una lista de problemas y limitaciones conocidos de SaaS Backup para Salesforce.
+
+
+
+== Faltan registros en la copia de seguridad de algunos objetos (defecto #1169)
+
+Después de una copia de seguridad completa o una copia de seguridad incremental de una organización, puede haber una pequeña discrepancia en el recuento del número total de registros descubiertos en comparación con el recuento del número total de registros descargados. Esto ocurre cuando se agregan campos específicos a la consulta y, en consecuencia, hacen que la API de Salesforce no devuelva todos los registros.
+
+
+
+== No se admite la restauración de registros de los que se ha realizado una copia de seguridad antes de cambiar el esquema (defecto n.o 1170)
+
+SaaS Backup no admite la restauración de registros de los que se realizó una copia de seguridad antes de cambiar el esquema. Si se intenta hacerlo, la restauración falla y aparece el siguiente mensaje: *Error de restauración debido a cambios en el esquema*.
+
+
+
+== Objetos excluidos de los backups
+
+La copia de seguridad de SaaS para Salesforce no realiza copias de seguridad de los siguientes objetos:
+
+* Objetos que no se pueden consultar mediante API de Salesforce
+* Objetos que no admiten consultas genéricas
+* Objetos de historial utilizados por Salesforce para realizar un seguimiento del historial de cambios a nivel de campo en registros de objetos.
+
+
+
+
+== Funciones no admitidas en la vista previa privada
+
+Las siguientes funciones no se admiten en la versión de vista previa privada de SaaS Backup para Salesforce.
+
+* Salesforce Chatter
+* Los siguientes tipos de relaciones
++
+** N:1 a N:N relaciones
+** Relaciones personales
+** Relaciones cíclicas
+
+
+

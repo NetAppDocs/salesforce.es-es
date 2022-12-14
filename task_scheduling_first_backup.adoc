@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: scheduling_first_backup.html 
+keywords: netapp, saas backup, salesforce, moving, organization, different, backup, tier 
+summary: Una vez protegidos los datos de Sandbox o de la instancia de producción, puede optar por moverlos a otro nivel de backup en cualquier momento. 
+---
+= Programar una copia de seguridad o cambiar la frecuencia de copia de seguridad
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Si agrega una instancia de Sandbox en SaaS Backup para Salesforce, de forma predeterminada, todos los datos del Sandbox estarán desprotegidos hasta que los mueva manualmente a un nivel de backup protegido. Una vez protegidos los datos de Sandbox o de la instancia de producción, puede elegir en cualquier momento moverlos a otro nivel de backup.
+
+.Pasos
+. En la navegación del panel izquierdo, haga clic en *Servicios*.
++
+image:services.jpg[""]
+
+. Si desea mover una organización en su instancia de producción, haga clic en *instancias de producción*.
++
+image:production_instances.gif[""]Si desea mover una organización en su instancia de Sandbox, haga clic en *instancias de Sandbox*.
+
++
+image:sandbox_instances.gif[""]
+
+. Seleccione la categoría de instancia correcta para la organización que desea mover.
++
+** Haga clic en el número anterior * INSTANCIAS PROTEGIDAS*, si la organización que desea mover está actualmente protegida por una política de copia de seguridad.
+** Haga clic en el número anterior *INSTANCIAS PENDIENTES*, si el estado de copia de seguridad de la organización que desea mover está pendiente,
+** Haga clic en el número anterior *INSTANCIAS DESPROTEGIDAS*, si la organización que desea mover está actualmente desprotegida por una política de copia de seguridad.
+
+
+. Seleccione el nuevo nivel. Solo están disponibles los backups de nivel 2 y nivel 3 para instancias de Sandbox. No se puede realizar una copia de seguridad de las instancias de Sandbox en la directiva de nivel 1. Las instancias de producción pueden estar en la política de nivel 1 o desprotegidas. No es posible realizar un backup de las instancias de producción con las directivas de nivel 2 o 3. La organización se traslada al nuevo nivel de backup.
+

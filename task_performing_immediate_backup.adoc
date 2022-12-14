@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task_performing_immediate_backup.html 
+keywords: netapp, saas backup, salesforce, managing, backups, immediate, backup, policies 
+summary: Puede usar SaaS Backup para Salesforce para realizar backups de sus datos. 
+---
+= Realizar una copia de seguridad inmediata
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Puede realizar un backup inmediato de su instancia de producción o zona aislada cada vez que considere necesario para la protección de datos.
+
+
+NOTE: Para la versión de prueba de SaaS Backup para Salesforce, solo puede realizar tres backups inmediatos al día.
+
+.Pasos
+. En la navegación del panel izquierdo, haga clic en *Servicios*.image:services.jpg[""]
+. Haga clic en *instancias de producción* o *instancias de Sandbox*.image:production_instances.gif[""]
+image:sandbox_instances.gif[""]
+. Seleccione la instancia correcta de la que desea realizar la copia de seguridad ahora.
++
+.. Haga clic en el número anterior *INSTANCIAS PROTEGIDAS*, si la instancia de la que desea realizar la copia de seguridad está actualmente protegida por una política de copia de seguridad.
+.. Haga clic en el número anterior *INSTANCIAS PENDIENTES*, si el estado de copia de seguridad de la instancia de la que desea realizar la copia de seguridad está pendiente,
+.. Haga clic en el número anterior *INSTANCIAS NO PROTEGIDAS*, si la instancia de la que desea realizar la copia de seguridad está actualmente desprotegida por una política de copia de seguridad.
+
+
+. Haga clic en el nombre de la organización.image:organization.jpg[""]
+. Haga clic en *copia de seguridad ahora*. Aparece un mensaje que indica que las organizaciones seleccionadas se están colocó en la cola de backup.
+. Haga clic en *Enviar*.
+

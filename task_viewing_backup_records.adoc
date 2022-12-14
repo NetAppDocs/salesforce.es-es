@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task_viewing_backup_records.html 
+keywords: netapp, saas backup, salesforce, viewing, backup, records, count, summary 
+summary: En SaaS Backup para Salesforce, puede comprobar el número de registros de backups en SaaS Backup para Salesforce. 
+---
+= Ver registros de copia de seguridad
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede comprobar el número de sus registros de copia de seguridad en SaaS Backup para Salesforce.
+
+El primer backup completo proporciona la cantidad total de registros de backup a nivel de organización. Después de esta primera copia de seguridad, puede ver el número total de registros creados, actualizados y eliminados del *Resumen de copia de seguridad*.
+
+.Pasos
+. En el panel de control, haga clic en el número de instancias protegidas (producción o entorno de pruebas).
+. Haga clic en *Ver* en *Resumen de copias de seguridad*.
++
+image:click_view_backup_summary.png["ver el resumen de backup"]
+
+. Vea el número de registros creados y eliminados y el recuento de registros de todos los cambios de registros de la tabla.
++
+image:record_count.png["Número de registros de backup"]
+
++
+** *Nombre de objeto*: Incluye todos los objetos de la organización.
+** *Creado* - todos los registros creados y actualizados.
+** *Eliminado* - todos los registros eliminados.
+** *Record count*: Número total de cambios de copia de seguridad de un objeto.
+
+
+

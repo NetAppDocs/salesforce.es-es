@@ -1,0 +1,151 @@
+---
+sidebar: sidebar 
+permalink: task_managing_restores.html 
+keywords: netapp, saas backup, salesforce, managing, data, metadata, restore, restores, restoring, recent, previous, backup, compare, comparison 
+summary: Puede utilizar SaaS Backup para Salesforce para restaurar los datos de los que ha realizado una copia de seguridad anteriormente. 
+---
+= Restaurar datos
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Puede usar SaaS Backup para Salesforce para restaurar datos y metadatos de los que haya realizado backups anteriormente.
+
+
+
+== Restaurar la copia de seguridad más reciente
+
+.Pasos
+. En la navegación del panel izquierdo, haga clic en *Servicios*.image:services.jpg[""]
+. Haga clic en *instancias de producción* o *instancias de Sandbox*.image:production_instances.gif[""]
+image:sandbox_instances.gif[""]
+. Haga clic en el número de *instancias protegidas*.
+. Haga clic en el nombre de la organización.image:organization.jpg[""]Se muestra una lista de objetos. Los objetos recuperables se muestran de forma predeterminada. Para ver la selección de objetos no recuperables, “incluir objetos no recuperables”. Los objetos no recuperables se indican mediante un icono gris. El icono rojo representa objetos de elementos de los que no se ha podido realizar una copia de seguridad en la copia de seguridad actual, pero que son recuperables a partir de copias de seguridad anteriores.
+
+
+|===
+
+
+| Objeto recuperable | image:recoverable_item.jpg[""] 
+
+
+| Objeto no recuperable | image:nonrecoverable_item.jpg[""] 
+
+
+| Objeto fallido | image:failed_item.jpg[""] 
+|===
+. Haga clic en el objeto que contiene los registros individuales que desea restaurar y, a continuación, busque el registro específico.
+. Haga clic en *Restaurar*.image:restore.jpg[""]
+. Seleccione opciones de restauración.
++
+.. *Restaurar con sobreescritura* está seleccionado de forma predeterminada. Esta opción reemplaza la versión existente del registro que está restaurando. Si desea conservar la versión actual del registro y la versión restaurada del registro, anule la selección de esta opción.
+.. *Restaurar relación* restaura los hijos de los registros padre junto con el padre hasta cinco niveles. Si no selecciona restaurar relación, solo se restaurará el registro primario.
+.. *Exportar datos* le permite exportar datos de una copia de seguridad en un momento específico. Puede exportar datos a nivel de objeto o a nivel de organización. Para obtener más información acerca de la característica de exportación a datos, vaya a. link:task_downloading_export_data.html["Descargando datos de exportación"].
++
+
+NOTE: Los trabajos de exportación sólo están disponibles durante siete días después de la finalización.
+
+
+
+. Haga clic en *Enviar*.image:submit.jpg[""]
+
+
+
+
+== Restauración a partir de una copia de seguridad anterior
+
+.Pasos
+. En la navegación del panel izquierdo, haga clic en *Servicios*.image:services.jpg[""]
+. Haga clic en *instancias de producción* o *instancias de Sandbox*.image:production_instances.jpg[""]
+image:sandbox_instances.jpg[""]
+. Haga clic en el número de *instancias protegidas*.
+. Haga clic en el nombre de la organización.image:organization.jpg[""]
+. Haga clic en *Ver historial de copias de seguridad*.
+. Seleccione para ver backups de un rango específico de hora o para seleccionar un backup para una fecha específica.
++
+.. Para seleccionar copias de seguridad para un intervalo de tiempo específico, en la esquina superior derecha, haga clic en el menú desplegable situado junto a *Mostrar copias de seguridad seleccionadas* y seleccione uno de los intervalos predefinidos de días.image:show_selected_backups.jpg[""]Se muestra una lista de backups que se produjeron durante el rango seleccionado.
+.. Para seleccionar una copia de seguridad para una fecha específica, haga clic en la fecha de la copia de seguridad en el calendario y, a continuación, seleccione la copia de seguridad específica que desee. El número del círculo rojo indica el número de copias de seguridad realizadas en esa fecha. Los círculos verdes individuales indican las copias de seguridad individuales.
+
+
+. Haga clic en el objeto que contiene los registros individuales que desea restaurar y, a continuación, busque el registro específico.
+. Haga clic en *Restaurar*.image:restore.jpg[""]
+. Seleccione opciones de restauración.
++
+.. *Restaurar con sobreescritura* está seleccionado de forma predeterminada. Esta opción reemplaza la versión existente del registro que está restaurando. Si desea conservar la versión actual del registro y la versión restaurada del registro, anule la selección de esta opción.
+.. *Restaurar relación* restaura los hijos de los registros padre junto con el padre hasta cinco niveles. Si no selecciona restaurar relación, solo se restaurará el registro primario.
+.. *Exportar datos* le permite exportar datos de una copia de seguridad en un momento específico. Puede exportar datos a nivel de objeto o a nivel de organización. Para obtener más información acerca de la característica de exportación a datos, vaya a. link:task_downloading_export_data.html["Descargando datos de exportación"].
++
+
+NOTE: Los trabajos de exportación sólo están disponibles durante siete días después de la finalización.
+
+
+
+. Haga clic en *Enviar*. Aparece un mensaje que indica que las organizaciones seleccionadas se están poniendo en la cola de trabajos.
+
+
+
+
+== Restaurar metadatos
+
+Es posible restaurar metadatos a nivel de organización o de granularidad.
+
+
+
+=== Restauraciones de metadatos a nivel de organización
+
+.Pasos
+. Vaya a *Servicios*.
+. Seleccione *instancias de producción* o *instancias de Sandbox*.
+. Haga clic en el número de instancias *protegidas*.
+. Haga clic en el nombre de la organización.
+. Haga clic en *Restaurar*.
+. Seleccione una opción de restauración.
++
+.. Para exportar los metadatos, seleccione *Exportar metadatos*. Se crea un archivo zip.
++
+
+NOTE: Las tareas de exportación de metadatos están disponibles durante los 30 días siguientes a la finalización.
+
+.. Para restaurar los metadatos, seleccione *Restaurar metadatos*.
+
+
+. Haga clic en *Enviar*.
+
+
+
+
+=== Restauración de metadatos de nivel granular
+
+.Pasos
+. Vaya a *Servicios*.
+. Seleccione *instancias de producción* o *instancias de Sandbox*.
+. Haga clic en el número de instancias *protegidas*.
+. Haga clic en el nombre de la organización.
+. Haga clic en la ficha *tipos de metadatos y componentes*. Se muestra una lista de los tipos de metadatos.
+. Seleccione los tipos de metadatos que desea restaurar.
+. Haga clic en *Restaurar*.
+. Seleccione una opción de restauración.
++
+image:restore_options_export-restore_metadata.png["opciones de exportación y restauración de metadatos"]
+
++
+.. Para exportar los metadatos, seleccione *Exportar metadatos*. Se crea un archivo zip.
++
+
+NOTE: Las tareas de exportación de metadatos están disponibles durante los 30 días siguientes a la finalización.
+
+.. Para restaurar los metadatos, seleccione *Restaurar metadatos*.
+
+
+. Haga clic en *Enviar*.
+

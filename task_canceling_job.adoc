@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: task_canceling_job.html 
+keywords: netapp, saas backup, salesforce, canceling, jobs, backup, restore 
+summary: Puede cancelar una copia de seguridad o una restauración inmediata. No se puede cancelar una copia de seguridad programada. 
+---
+= Cancelar un trabajo
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Puede cancelar una copia de seguridad o una restauración inmediata. No se puede cancelar una copia de seguridad programada.
+
+
+toc::[]
+.Pasos
+. Haga clic en *trabajos* en el panel de navegación de la izquierda.
+. En *trabajos recientes en ejecución*, busque el trabajo que desea cancelar.
+. Haga clic en *Cancelar*.
+

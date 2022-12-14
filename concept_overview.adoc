@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: concept_overview.html 
+keywords: overview, concepts, features, use case 
+summary: NetApp SaaS Backup para Salesforce es un servicio seguro nativo del cloud que realiza backups de sus datos de Salesforce en el almacenamiento Amazon S3. SaaS Backup le ayuda a proteger sus datos frente a amenazas o eliminaciones por accidente. 
+---
+= Información general sobre NetApp SaaS Backup para Salesforce
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+NetApp SaaS Backup para Salesforce es un servicio seguro nativo del cloud que realiza backups de sus datos de Salesforce en el almacenamiento Amazon S3. SaaS Backup le ayuda a proteger sus datos frente a amenazas o eliminaciones por accidente.
+
+image:Overview.gif["Descripción gráfica de SaaS Backup para Salesforce."]NOTA: Al actualizar desde la vista previa privada de SaaS Backup para Salesforce a la disponibilidad general del producto, los datos de vista previa privada no se conservan.
+
+Si está interesado en SaaS Backup para Microsoft Office 365, puede encontrar la documentación link:https://docs.netapp.com/us-en/saasbackupO365/["aquí"].

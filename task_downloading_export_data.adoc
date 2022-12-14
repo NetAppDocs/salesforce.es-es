@@ -1,0 +1,116 @@
+---
+sidebar: sidebar 
+permalink: task_downloading_export_data.html 
+keywords: netapp, saas backup, salesforce, viewing, downloading, export, data 
+summary: Puede descargar datos adjuntos, resultados y estadísticas mediante la función Exportar a datos. 
+---
+= Descargando datos de exportación
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Puede exportar datos a nivel de objeto y organización. Para cada exportación, puede descargar datos adjuntos, resultados y estadísticas de una copia de seguridad anterior.
+
+
+
+== Exportación a nivel de objeto
+
+.Pasos
+. En la navegación del panel izquierdo, haga clic en *Servicios*.image:services.jpg[""]
+. Haga clic en *instancias de producción* o *instancias de Sandbox*.image:production_instances.gif["La imagen muestra el cuadro instancias de producción"]
+image:sandbox_instances.gif["La imagen muestra el cuadro instancias de recinto de seguridad"]
+. Haga clic en el número de *instancias protegidas*.image:protected_instances_screenshot.gif["La imagen muestra instancias protegidas"]
+. Haga clic en el nombre de la organización.image:organization.jpg["La imagen muestra dónde hacer clic en el nombre de la organización"]
+. Seleccione los objetos que desea exportar y haga clic en *Restaurar*.image:restore.jpg["La imagen muestra el botón de restauración"]
+. Si es necesario, seleccione *Restaurar relaciones* o *Restaurar archivos/archivos adjuntos* para incluirlos en su exportación.
++
+
+NOTE: Si selecciona *Restaurar relaciones*, el trabajo exporta el objeto seleccionado y todos sus objetos de relación. Si no selecciona *Restaurar relaciones*, el trabajo sólo exporta los objetos seleccionados.
+
+. Haga clic en *Enviar*.
+. Haga clic en *trabajos* en la navegación del panel izquierdo para ver el trabajo de restauración.
+. Haga clic en *total de objetos* o *correcto* para ver los detalles del trabajo y las opciones de descarga.
++
+.. Para exportar trabajos con *Restaurar archivos/archivos adjuntos*, tiene tres opciones de descarga:
++
+... Para obtener resultados, haga clic en image:export_data_download_link.gif["La imagen muestra el botón de enlace de descarga de datos de exportación"].
++
+.... En el buscador, busque el archivo .tar.gz descargado.
+.... Descomprima el archivo para obtener un archivo .tar.
+.... Extraiga el archivo .tar para ver los resultados DE EXCEL.
+
+
+... Para los archivos adjuntos, haga clic en image:attachments_download_link.gif["La imagen muestra el enlace de descarga de archivos adjuntos"].
++
+.... En el buscador, busque el archivo .tar.gz descargado.
+.... Descomprima el archivo para obtener un archivo .tar.
+.... Extraiga el archivo .tar para ver los datos adjuntos.
+
+
+... Para un informe de estadísticas, haga clic en image:download.gif["La imagen muestra el enlace de descarga"].
+
+
+.. Para exportar trabajos sin *Restaurar archivos/archivos adjuntos*, tiene dos opciones de descarga:
++
+... Para obtener resultados, haga clic en image:export_data_download_link.gif["La imagen muestra el enlace de descarga de datos de exportación"].
+... Para un informe de estadísticas, haga clic en image:download.gif["La imagen muestra el enlace de descarga"].
+
+
+
+
+
+
+
+
+== Exportación a nivel de organización
+
+.Pasos
+. En la navegación del panel izquierdo, haga clic en *Servicios*.image:services.jpg[""]
+. Haga clic en *instancias de producción* o *instancias de Sandbox*.image:production_instances.gif["La imagen muestra el cuadro instancias de producción"]
+image:sandbox_instances.gif["La imagen muestra el cuadro instancias de recinto de seguridad"]
+. Haga clic en el número de *instancias protegidas*.image:protected_instances_screenshot.gif["La imagen muestra instancias protegidas"]
+. Seleccione *Tier*.image:tier_selection.gif["La imagen muestra el menú desplegable de nivel"]
+. Haga clic en *Restaurar* y, a continuación, en la opción *Exportar datos*.image:restore_export_data.gif["La imagen muestra el menú desplegable Restaurar con la opción de exportación"]
+. Si es necesario, haga clic en *Restaurar archivos/archivos adjuntos* para incluirlos en su exportación.
+. Haga clic en *Enviar*.
+. Haga clic en *trabajos* en la navegación del panel izquierdo para ver el trabajo de restauración.
+. Haga clic en *total Organizations* o *suckful* para ver los detalles del trabajo y las opciones de descarga.
++
+.. Para exportar trabajos con *Restaurar archivos/archivos adjuntos*, tiene tres opciones de descarga:
++
+... Para obtener resultados, haga clic en image:export_data_download_link.gif["La imagen muestra el botón de enlace de descarga de datos de exportación"].
++
+.... En el buscador, busque el archivo .tar.gz descargado.
+.... Descomprima el archivo para obtener un archivo .tar.
+.... Extraiga el archivo .tar para ver los resultados DE EXCEL.
+
+
+... Para los archivos adjuntos, haga clic en image:attachments_download_link.gif["La imagen muestra el enlace de descarga de archivos adjuntos"].
++
+.... En el buscador, busque el archivo .tar.gz descargado.
+.... Descomprima el archivo para obtener un archivo .tar.
+.... Extraiga el archivo .tar para ver los datos adjuntos.
+
+
+... Para un informe de estadísticas, haga clic en image:download.gif["La imagen muestra el enlace de descarga"].
+
+
+.. Para exportar trabajos sin *Restaurar archivos/archivos adjuntos*, tiene dos opciones de descarga:
++
+... Para obtener resultados, haga clic en image:export_data_download_link.gif["La imagen muestra el enlace de descarga de datos de exportación"].
+... Para un informe de estadísticas, haga clic en image:download.gif["La imagen muestra el enlace de descarga"].
+
+
+
+
+
